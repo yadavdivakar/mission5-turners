@@ -5,7 +5,7 @@ export const StyledSideBar = styled.div`
     display: flex;
     flex-direction: column ;
     position: relative;
-    height: calc(100vh - 50px);
+    height: 100%;
     width: auto;
     background-color: blue;
 
@@ -37,4 +37,5 @@ export const StyledParentDiv = styled.div`
 
 export const StyledLinkIcon = styled.div`
     display:flex;
+    margin-right: 5px;
 `
