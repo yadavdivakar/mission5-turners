@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledSideBar, StyledSideBarButton, StyledParentDiv, StyledLinkIcon, StyledAdContainer, StyledSettingsSVG, StyledSideBarButtonContainer } from './SideMenu.styled';
+import { StyledSideBar, StyledSideBarButton, StyledParentDiv, StyledLinkIcon, StyledAdContainer, StyledSettingsSVG, StyledSideBarButtonContainer, StyledSideBarButtonArrow } from './SideMenu.styled';
 import { useState } from 'react';
 import { ReactComponent as LearningObjectivesSVG } from "../../../images/Target.svg";
 import { ReactComponent as InstructionsSVG } from "../../../images/InstructionsIcon.svg";
@@ -11,8 +11,8 @@ import { ReactComponent as TakeQuizSVG } from "../../../images/NotePad.svg";
 import { ReactComponent as ProfileSVG } from "../../../images/Logout.svg";
 import { ReactComponent as SettingsSVG } from "../../../images/Settings.svg";
 import { ReactComponent as LogoutSVG } from "../../../images/Logout.svg";
-import { ReactComponent as AdSVG } from "../../../images/Advertisement.svg"
-
+import { ReactComponent as AdSVG } from "../../../images/Advertisement.svg";
+import { ReactComponent as TriangleArrowSVG } from "../../../images/Triangle.svg";
 
 const SideMenu = () => {
 
@@ -41,8 +41,10 @@ const SideMenu = () => {
 
 
             </div>
-            <StyledSideBarButtonContainer>
-              <StyledSideBarButton onClick={handleOpenCloseState} />
+            <StyledSideBarButtonContainer >
+              <StyledSideBarButton onClick={handleOpenCloseState} isOpen={Open} >
+                <TriangleArrowSVG></TriangleArrowSVG>
+              </StyledSideBarButton>
             </StyledSideBarButtonContainer>
 
 
@@ -80,8 +82,10 @@ const SideMenu = () => {
                 <TakeQuizSVG width={SVGwidth} height={SVGHeight}></TakeQuizSVG>
               </StyledParentDiv>
             </div>
-            <StyledSideBarButtonContainer>
-              <StyledSideBarButton onClick={handleOpenCloseState} />
+            <StyledSideBarButtonContainer >
+              <StyledSideBarButton onClick={handleOpenCloseState} isOpen={Open} >
+                <TriangleArrowSVG></TriangleArrowSVG>
+              </StyledSideBarButton>
             </StyledSideBarButtonContainer>
           </>
         )}

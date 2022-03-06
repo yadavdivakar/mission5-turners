@@ -9,7 +9,7 @@ export const StyledSideBar = styled.div`
     background-color: #43C0F6;
     height: 100%;
     overflow: auto;
-    justify-content: space-between ;
+    justify-content:  ${( {isOpen}) => (isOpen ? 'space-between' : '')} ;
     p{
         margin: 0;
         font-size: 10px ;
@@ -26,9 +26,7 @@ export const StyledSideBarButtonContainer = styled.div`
     
     width: 100%;
     min-height: 50px;
-    flex-shrink: 2 ;
- 
-    
+        
 `
 
 
@@ -38,10 +36,16 @@ export const StyledSideBarButton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white ;
-    min-height: 40px;
-    width: 20%;
+    background-color: #B2E4FA ;
+    min-height: 50px;
+    width: 40px;
     cursor: pointer;
+    transform: ${({ isOpen }) => (isOpen ? `rotate(180deg)` : `rotate(0)`)};
+    border-top-right-radius: ${( {isOpen}) => (isOpen ? '10px' : '10px')};
+    border-bottom-right-radius: ${( {isOpen}) => (isOpen ? '10px' : '10px')};
+    left: ${( {isOpen}) => (!isOpen ? '0' : '')};
+    
+
 `
 
 export const StyledMenuContainer = styled.div`
