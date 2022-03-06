@@ -10,6 +10,9 @@ const PageLayout = ({children}) => {
             <SideMenu></SideMenu>
             <StyledMain>{children}</StyledMain>
         </StyledLayout>
+        <footer>
+          <p>Test</p>
+        </footer>
     </>
   )
 }

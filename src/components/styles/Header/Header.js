@@ -1,8 +1,14 @@
 import React from 'react'
-import { StyledHeader } from './Header.styled'
+import { StyledHeader,StyledLogoContainer } from './Header.styled'
+// import starImg from "../../../images/Star Logo 07-2.png"
+import {ReactComponent as HeaderLogo} from "../../../images/HeaderLogo.svg";
 const Header = () => {
   return (
-    <StyledHeader></StyledHeader>
+    <StyledHeader>
+      {/* <img src={starImg} color={'blue'}></img> */}
+      <StyledLogoContainer><HeaderLogo></HeaderLogo></StyledLogoContainer>
+      
+    </StyledHeader>
   )
 }
 
