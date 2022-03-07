@@ -6,7 +6,8 @@ export const StyledHeader = styled.header`
     background-color:white ;
     min-height: 50px ;
     justify-content: space-between ;
-  
+    overflow-y: auto;
+    
 `
 
 export const StyledLogoContainer = styled.div`
@@ -15,7 +16,7 @@ export const StyledLogoContainer = styled.div`
     align-items: center ;
     width: auto;
     padding: 0 30px;
-    
+   
 `
 
 export const StyledLeftHeaderGroup = styled.div`
@@ -49,6 +50,12 @@ export const StyledButton = styled.button`
     color: white;
     font-weight: 900;
     flex: 1;
+
+    @media screen and (max-width: 1480px){
+        width: 100px;
+        font-size: 9px;
+    }
+
 `
 
 export const StyledFlagGroup = styled.div`
@@ -81,4 +88,5 @@ export const LevelsContainer = styled.div`
 export const SmallDotImg = styled.img`
     width: 30px;
     margin-top: 10px; ;
+  
 `
