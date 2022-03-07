@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const StyledLayout = styled.div`
     display:flex;
     height: 100%;
+    width: 100%;
    
 `
 
@@ -23,4 +24,9 @@ export const StyledContentPane = styled.div`
     background-color: red ;
     border-radius: 20px ;
 
+`
+
+export const StyledFooter = styled.footer`
+    display:flex;
+    justify-content: center ;
 `

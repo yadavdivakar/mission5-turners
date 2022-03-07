@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledLayout } from './PageLayout.styled'
+import { StyledLayout,StyledFooter } from './PageLayout.styled'
 import RoutesPaths from '../../../RoutesPaths'
 const PageLayout = () => {
   return (
@@ -8,9 +8,9 @@ const PageLayout = () => {
         <RoutesPaths>
         </RoutesPaths>
       </StyledLayout>
-      <footer>
-        <p>Test</p>
-      </footer>
+      <StyledFooter>
+        <p>&copy; LevelUp Works 2020</p>
+      </StyledFooter>
     </>
   )
 }
