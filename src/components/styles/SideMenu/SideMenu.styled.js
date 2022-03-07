@@ -78,5 +78,9 @@ export const StyledSettingsSVG = styled.div`
 `
 
 export const StyledLink = styled(Link)`
-
+    list-style: none ;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 `

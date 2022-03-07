@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledSideBar, StyledSideBarButton, StyledParentDiv, StyledLinkIcon, StyledAdContainer, StyledSettingsSVG, StyledSideBarButtonContainer, StyledSideBarButtonArrow, StyledLink } from './SideMenu.styled';
+import { StyledSideBar, StyledSideBarButton, StyledParentDiv, StyledLinkIcon, StyledAdContainer, StyledSettingsSVG, StyledSideBarButtonContainer, StyledLink } from './SideMenu.styled';
 import { useState } from 'react';
 import { ReactComponent as LearningObjectivesSVG } from "../../../images/Target.svg";
 import { ReactComponent as InstructionsSVG } from "../../../images/InstructionsIcon.svg";
@@ -32,13 +32,15 @@ const SideMenu = () => {
 
             <div>
               {
-                MenuItems.map(({ text, icon, }) => (
-                  // <Link to="/instructions" key={text}>
-                    <StyledParentDiv key={text}>
+                MenuItems.map(({ text, icon,pathstring }) => (
+
+                  <StyledParentDiv key={text}>
+                    <StyledLink to = {pathstring}> 
                       <StyledLinkIcon>{icon}</StyledLinkIcon>
                       <p>{text}</p>
-                    </StyledParentDiv>
-                  // </Link>
+                    </StyledLink>
+                  </StyledParentDiv>
+
                 )
 
                 )
@@ -103,13 +105,13 @@ const SideMenu = () => {
 const SVGHeight = 33;
 const SVGwidth = 33;
 const MenuItems = [
-  { text: "LEARNING OBJECTIVES", icon: <LearningObjectivesSVG /> },
-  { text: "INSTRUCTIONS", icon: <InstructionsSVG /> },
-  { text: "VIDEO TUTORIAL", icon: <VideoSVG /> },
-  { text: "MAKE PROJECT", icon: <MakeProjectSVG /> },
-  { text: "SUBMIT PROJECT", icon: <SubmitSVG /> },
-  { text: "BONUS CHALLENGE", icon: <BonusChallengeSVG /> },
-  { text: "TAKE THE QUIZ", icon: <TakeQuizSVG /> },
+  { text: "LEARNING OBJECTIVES", icon: <LearningObjectivesSVG />, pathstring:"/objectives"},
+  { text: "INSTRUCTIONS", icon: <InstructionsSVG />, pathstring: "/instructions" },
+  { text: "VIDEO TUTORIAL", icon: <VideoSVG />, pathstring:"tutorial" },
+  { text: "MAKE PROJECT", icon: <MakeProjectSVG />, pathstring: "makeproject" },
+  { text: "SUBMIT PROJECT", icon: <SubmitSVG />, pathstring:"/"},
+  { text: "BONUS CHALLENGE", icon: <BonusChallengeSVG /> , pathstring:"/"},
+  { text: "TAKE THE QUIZ", icon: <TakeQuizSVG /> , pathstring: "/"},
 ]
 
 

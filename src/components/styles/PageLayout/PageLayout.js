@@ -1,16 +1,12 @@
 import React from 'react'
-import SideMenu from '../SideMenu/SideMenu'
-import { StyledSideBar } from '../SideMenu/SideMenu.styled'
-import { StyledLayout, StyledMain, StyledContentPane } from './PageLayout.styled'
-
-const PageLayout = ({ children }) => {
+import { StyledLayout } from './PageLayout.styled'
+import RoutesPaths from '../../../RoutesPaths'
+const PageLayout = () => {
   return (
     <>
       <StyledLayout>
-        <SideMenu></SideMenu>
-        <StyledMain>
-          <StyledContentPane>{children}</StyledContentPane>
-        </StyledMain>
+        <RoutesPaths>
+        </RoutesPaths>
       </StyledLayout>
       <footer>
         <p>Test</p>

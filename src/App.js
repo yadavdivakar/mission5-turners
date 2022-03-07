@@ -11,10 +11,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header></Header>
-      <PageLayout>
-        <RoutesPaths/>
-        {/* Whatever we put inside pagelayout will be passed via children special destructured element and rendered to the main page.*/}
-      </PageLayout>
+      <PageLayout></PageLayout>
     </>
   );
 }
