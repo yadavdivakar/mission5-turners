@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import {Link}  from "react-router-dom";
 
 export const StyledSideBar = styled.div`
     display: flex;
@@ -77,3 +77,6 @@ export const StyledSettingsSVG = styled.div`
     justify-content: space-evenly ;
 `
 
+export const StyledLink = styled(Link)`
+
+`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledSideBar, StyledSideBarButton, StyledParentDiv, StyledLinkIcon, StyledAdContainer, StyledSettingsSVG, StyledSideBarButtonContainer, StyledSideBarButtonArrow } from './SideMenu.styled';
+import { StyledSideBar, StyledSideBarButton, StyledParentDiv, StyledLinkIcon, StyledAdContainer, StyledSettingsSVG, StyledSideBarButtonContainer, StyledSideBarButtonArrow, StyledLink } from './SideMenu.styled';
 import { useState } from 'react';
 import { ReactComponent as LearningObjectivesSVG } from "../../../images/Target.svg";
 import { ReactComponent as InstructionsSVG } from "../../../images/InstructionsIcon.svg";
@@ -13,34 +13,38 @@ import { ReactComponent as SettingsSVG } from "../../../images/Settings.svg";
 import { ReactComponent as LogoutSVG } from "../../../images/Logout.svg";
 import { ReactComponent as AdSVG } from "../../../images/Advertisement.svg";
 import { ReactComponent as TriangleArrowSVG } from "../../../images/Triangle.svg";
-
+// import { Link } from 'react-router-dom';
 const SideMenu = () => {
 
   const [Open, SetOpen] = useState(true);
   const handleOpenCloseState = () => {
     SetOpen(!Open);
   }
+
+
+
   return (
     <>
       <StyledSideBar>
 
         {Open && (
           <>
+
             <div>
               {
-                MenuItems.map(({ text, icon }) => (
-
-                  <StyledParentDiv key={text}>
-                    <StyledLinkIcon>{icon}</StyledLinkIcon>
-                    <p>{text}</p>
-                  </StyledParentDiv>
+                MenuItems.map(({ text, icon, }) => (
+                  // <Link to="/instructions" key={text}>
+                    <StyledParentDiv key={text}>
+                      <StyledLinkIcon>{icon}</StyledLinkIcon>
+                      <p>{text}</p>
+                    </StyledParentDiv>
+                  // </Link>
                 )
 
                 )
               }
-
-
             </div>
+
             <StyledSideBarButtonContainer >
               <StyledSideBarButton onClick={handleOpenCloseState} isOpen={Open} >
                 <TriangleArrowSVG></TriangleArrowSVG>
