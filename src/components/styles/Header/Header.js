@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledHeader, StyledLogoContainer, StyledLeftHeaderGroup, StyledRightHeaderGroup, StyledButtonGroup, StyledButton, StyledFlagGroup, ProjectContainer, LevelsContainer,SmallDotImg } from './Header.styled'
+import { StyledHeader, StyledLogoContainer, StyledLeftHeaderGroup, StyledRightHeaderGroup, StyledButtonGroup, StyledButton, StyledFlagGroup, ProjectContainer, LevelsContainer,SmallDotImg,TextContainer } from './Header.styled'
 // import starImg from "../../../images/Star Logo 07-2.png"
 import { ReactComponent as HeaderLogo } from "../../../images/HeaderLogo.svg";
 import { ReactComponent as ProjectHeader } from "../../../images/ProjectIntro.svg";
@@ -18,7 +18,10 @@ const Header = () => {
         </StyledLogoContainer>
 
         <ProjectContainer>
-          <ProjectHeader></ProjectHeader>
+          <TextContainer>
+            <p>Project</p>
+            <p>Introduction</p>
+          </TextContainer>
         </ProjectContainer>
 
         <LevelsContainer>

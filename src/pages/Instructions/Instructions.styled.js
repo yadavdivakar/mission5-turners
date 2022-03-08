@@ -1,21 +1,28 @@
 import styled from "styled-components";
 
 export const StyledHeaderDiv = styled.div`
-    
+
     text-align: center;
+    display:flex;
+    flex-direction:column;
+    
 `
 
 export const StyledBlockDivContainer = styled.div`
-    width: 85%;
-    height: 80%;
     display:flex;
-    justify-content: space-around ;
+    justify-content: center;
     
+    @media (max-width: 1000px){
+        flex-direction:column;
+        
+    }
+
 `
 
 export const StyledBlockDiv = styled.div`
     display:flex;
     flex-direction: row ;
+    justify-content: center;
 
 `
 
@@ -32,6 +39,7 @@ export const ChildBlockDiv = styled.div`
 export const BlockChildContainer = styled.div`
     display:flex;
     flex-direction: column ;
+    
 `
 export const BlockParent = styled.div`
     display:flex;

@@ -17,7 +17,12 @@ export const StyledSideBar = styled.div`
         font-weight: 900;
         
     }   
-   
+    @media (max-width:768px){
+        overflow:visible;
+    }
+  
+    
+
  
 `
 
@@ -26,6 +31,12 @@ export const StyledSideBarButtonContainer = styled.div`
     
     width: 100%;
     min-height: 50px;
+
+    @media (max-width:768px){
+        display:none;
+    }
+
+
         
 `
 
@@ -67,6 +78,9 @@ export const StyledLinkIcon = styled.div`
 export const StyledAdContainer = styled.div`
     display:flex;
     padding: 10px;
+    @media (max-width:768px){
+        display:none;
+    }
 `
 
 export const StyledSettingsSVG = styled.div`
@@ -75,6 +89,10 @@ export const StyledSettingsSVG = styled.div`
     justify-content: center;
     align-items: center;
     justify-content: space-evenly ;
+
+    @media (max-width:768px) {
+        display:none;
+    }
 `
 
 export const StyledLink = styled(Link)`
@@ -83,4 +101,22 @@ export const StyledLink = styled(Link)`
     align-items: center;
     text-decoration: none;
     color: inherit;
+`
+
+export const MobileContainer = styled.div`
+    display:none;
+    @media (max-width: 768px) {
+        display:flex;
+        flex-direction: row;
+        height: 100%;
+        overflow: visible;
+        justify-content: center;
+    }
+    
+`
+export const MenuItemsContainer = styled.div`
+    @media (max-width:768px){
+        display:none;
+    }
+
 `
