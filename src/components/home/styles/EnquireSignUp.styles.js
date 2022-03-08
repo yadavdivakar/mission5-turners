@@ -20,13 +20,14 @@ export const RightSide = styled.div`
 
 export const LeftSide = styled.div`
     flex: 50%;
+    padding-left: 3%;
 `;
 
 export const ImageDiv = styled.img`
     display: flex;
     padding-left: 15%;
-    padding-top: 60px;;
-    width: 400px;
+    padding-top: 50px;;
+    width: 440px;
     height: auto;
     
 `;
@@ -51,15 +52,17 @@ export const EnquireBody = styled.p`
     font-family: open sans;
     font-size: 0.9rem;
     color: #707070;
+    padding-top: 20px;
 `;
 
 export const ButtonContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     white-space: nowrap;
-    justify-content: left;
-    padding-left: 20px;
+    /* justify-content: left; */
+    padding-left: 50px;
+    padding-top: 0px;
 `;
 
 export const LearnMoreButton = styled.button`
