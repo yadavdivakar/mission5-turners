@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      
       <RoutesPaths>
       </RoutesPaths>
     </>
