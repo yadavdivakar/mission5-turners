@@ -44,7 +44,9 @@ export const StyledButton = styled.button`
   color: white;
   font-weight: 900;
   flex: 1;
-
+  &:hover{
+    transform:scale(0.9);
+  }
   @media screen and (max-width: 1480px) {
     width: 100px;
     font-size: 9px;

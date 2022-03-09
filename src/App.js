@@ -10,8 +10,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header></Header>
-      <PageLayout></PageLayout>
+      
+      <RoutesPaths>
+      </RoutesPaths>
     </>
   );
 }

@@ -10,18 +10,14 @@ import { StyledMain } from "./components/styles/PageLayout/PageLayout.styled";
 const RoutesPaths = () => {
     return (
         <BrowserRouter>
-            <SideMenu></SideMenu>
-            <StyledMain>
                     <Routes>
+                        <Route path="/" element={<Instructions />}> </Route>
                         <Route path="/instructions" element={<Instructions />}> </Route>
                         <Route path="/objectives" element={<LearningObjectives />}> </Route>
                         <Route path="/makeproject" element={<MakeProject />}> </Route>
                         <Route path="/submitproject" element={<SubmitProject />}> </Route>
-                        <Route path="/videotutorial" element={<VideoTutorial />}> </Route>
+                        <Route path="/tutorial" element={<VideoTutorial />}> </Route>
                     </Routes>
-                    
-            </StyledMain>
-
         </BrowserRouter>
     )
 

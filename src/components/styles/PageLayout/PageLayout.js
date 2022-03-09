@@ -1,17 +1,11 @@
 import React from 'react'
-import { StyledLayout,StyledFooter } from './PageLayout.styled'
-import RoutesPaths from '../../../RoutesPaths'
-const PageLayout = () => {
+import { StyledLayout, StyledFooter } from './PageLayout.styled'
+import Header from '../Header/Header'
+const PageLayout = ({children}) => {
   return (
-    <>
-      <StyledLayout>
-        <RoutesPaths>
-        </RoutesPaths>
-      </StyledLayout>
-      <StyledFooter>
-        <p>&copy; LevelUp Works 2020</p>
-      </StyledFooter>
-    </>
+    <StyledLayout>
+          {children}
+    </StyledLayout>
   )
 }
 
