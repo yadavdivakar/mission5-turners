@@ -1,27 +1,19 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Footer from './components/Footer';
+
 import Features from './components/Features';
 import Teachers from './components/Teachers';
-import './App.css';
-
-
-
-
+import { GlobalStyle } from './styles/GlobalStyles';
+import PageLayout from './components/styles/PageLayout/PageLayout';
+import Header from './components/styles/Header/Header';
+import RoutesPaths from './RoutesPaths';
 function App() {
   return (
-    <Router>
-     <Navbar />
-     <Routes>
-       <Route path='/' element={<Home /> }/>
-       <Route path='/features' element={<Features />} />
-       <Route path='/teachers' element={<Teachers />} />
-
-     </Routes>
-     <Footer />
-    </Router>
+    <>
+      <GlobalStyle />
+      <RoutesPaths>
+      </RoutesPaths>
+    </>
   );
 }
 

@@ -17,10 +17,10 @@ import {
     LanguageButton,
     LangContainer,
     LogInContainer,
-} from '../styles/Navbar.styles';
-import LogoImg from '../images/Home/Star Logo 07-2.png';
-import NZ from '../images/Home/NZ Flag.png';
-import tinoRangatiratanga from '../images/Home/Maori flag.png';
+} from "./styles/Navbar/Navbar.styles";
+// import LogoImg from './images/Home/Star Logo 07-2.png';
+// import NZ from '../images/Home/NZ Flag.png';
+// import tinoRangatiratanga from '../images/Home/Maori flag.png';
 
 
 
@@ -31,7 +31,7 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
         <NavbarInnerContainer>
         <LeftContainer>
-            <Logo src={LogoImg}></Logo>
+            {/* <Logo src={LogoImg}></Logo> */}
         </LeftContainer>
         <MiddleContainer>
             <NavbarLinkContainer>
@@ -49,8 +49,8 @@ function Navbar() {
         <RightContainer>
             
             <LangContainer>LANG
-                <LanguageButton src={NZ} ></LanguageButton>
-                <LanguageButton src={tinoRangatiratanga} ></LanguageButton>
+                {/* <LanguageButton src={NZ} ></LanguageButton>
+                <LanguageButton src={tinoRangatiratanga} ></LanguageButton> */}
             </LangContainer>
             <LogInContainer>
             <FontAwesomeIcon icon={faUserCircle}></FontAwesomeIcon>
