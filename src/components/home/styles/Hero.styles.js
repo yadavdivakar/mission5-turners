@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import img from '../../../images/Home/Hero image option 1 edit 2.png';
+import img from '../../../images/Home/Hero.png';
 
 export const HeroBackground = styled.div`
-    /* background-image: url(${img});
-    background-size: cover; */
+    background-image: url(${img});
+    background-size: cover;
     width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 `;
 
 export const HeroContainer = styled.div`

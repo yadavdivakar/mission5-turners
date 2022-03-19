@@ -173,7 +173,7 @@ const MenuItems = [
   },
   { text: "VIDEO TUTORIAL", icon: <VideoSVG />, pathstring: "/tutorial" },
   { text: "MAKE PROJECT", icon: <MakeProjectSVG />, pathstring: "/makeproject" },
-  { text: "SUBMIT PROJECT", icon: <SubmitSVG />, pathstring: "/" },
+  { text: "SUBMIT PROJECT", icon: <SubmitSVG />, pathstring: "/submitproject" },
   { text: "BONUS CHALLENGE", icon: <BonusChallengeSVG />, pathstring: "/" },
   { text: "TAKE THE QUIZ", icon: <TakeQuizSVG />, pathstring: "/" },
 ];
