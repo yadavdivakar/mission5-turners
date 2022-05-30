@@ -1,0 +1,29 @@
+.image2 {
+    composes: image1 from "./Container1.module.css";
+    background-image: url("../images//image2.png");
+    margin-top: 700px;
+
+}
+
+.detail2 {
+    composes: detail1 from "./Container1.module.css";
+    margin-top: 700px;
+}
+
+.title2 {
+    composes: title1 from "./Container1.module.css";
+}
+
+.heading2 {
+    composes: heading1 from "./Container1.module.css";
+}
+
+.points2 {
+    composes: points1 from "./Container1.module.css";
+}
+
+.btn2 {
+    composes: btn1 from "./Container1.module.css";
+}
+
+
